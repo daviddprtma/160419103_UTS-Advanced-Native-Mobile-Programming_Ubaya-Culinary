@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemHome">
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.RestaurantDetailFragment"
+        android:label="fragment_restaurant_detail"
+        tools:layout="@layout/fragment_restaurant_detail" >
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_homeFragment"
+            app:destination="@id/itemHome" />
+        <argument
+            android:name="idRestaurant"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/itemAbout"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_itemAbout_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemRecommended"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.RecommendedFragment"
+        android:label="fragment_recommended"
+        tools:layout="@layout/fragment_recommended" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" >
+        <action
+            android:id="@+id/action_supportFragment_to_itemAbout"
+            app:destination="@id/itemAbout" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFood"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_itemFood_to_itemDrink"
+            app:destination="@id/itemDrink" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDrink"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.DrinkFragment"
+        android:label="fragment_drink"
+        tools:layout="@layout/fragment_drink" >
+        <action
+            android:id="@+id/action_itemDrink_to_itemFood"
+            app:destination="@id/itemFood" />
+    </fragment>
+</navigation>
