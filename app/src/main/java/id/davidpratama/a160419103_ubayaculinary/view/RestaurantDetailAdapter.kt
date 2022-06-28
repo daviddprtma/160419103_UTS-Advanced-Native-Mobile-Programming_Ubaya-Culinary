@@ -9,7 +9,10 @@ import id.davidpratama.a160419103_ubayaculinary.model.ReviewRestaurant
 import kotlinx.android.synthetic.main.fragment_restaurant_detail.view.*
 
 class RestaurantDetailAdapter(val restaurantDetailList: ArrayList<ReviewRestaurant>):RecyclerView.Adapter<RestaurantDetailAdapter.RestaurantDetailViewHolder>() {
-    class RestaurantDetailViewHolder(var view:View) : RecyclerView.ViewHolder(view)
+    //class RestaurantDetailViewHolder(var view:RestaurantDetailViewHolder):
+        //RecyclerView.ViewHolder(view.itemView)
+    class RestaurantDetailViewHolder(var view:View): RecyclerView.ViewHolder(view)
+
 
     fun updateDetailReviewRestaurant(newReviewRestaurantDetail:ArrayList<ReviewRestaurant>){
         restaurantDetailList.clear()
