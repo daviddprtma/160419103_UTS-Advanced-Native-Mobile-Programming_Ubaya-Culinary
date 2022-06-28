@@ -31,21 +31,21 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(HomeListViewModel::class.java)
-        viewModel.refresh()
-
-        recView.layoutManager = LinearLayoutManager(context)
-        recView.adapter = homeAdapter
-
-        refreshLayout()
-
-        refreshHomeLayout.setOnRefreshListener {
-            recView.visibility = View.GONE
-            txtErrorHome.visibility = View.GONE
-            progressLoadHome.visibility = View.VISIBLE
-            viewModel.refresh()
-            refreshHomeLayout.isRefreshing = false
-        }
+//        viewModel = ViewModelProvider(this).get(HomeListViewModel::class.java)
+//        viewModel.refresh()
+//
+//        recView.layoutManager = LinearLayoutManager(context)
+//        recView.adapter = homeAdapter
+//
+//        refreshLayout()
+//
+//        refreshHomeLayout.setOnRefreshListener {
+//            recView.visibility = View.GONE
+//            txtErrorHome.visibility = View.GONE
+//            progressLoadHome.visibility = View.VISIBLE
+//            viewModel.refresh()
+//            refreshHomeLayout.isRefreshing = false
+//        }
 
     }
 

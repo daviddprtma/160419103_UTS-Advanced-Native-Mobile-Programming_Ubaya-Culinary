@@ -31,7 +31,6 @@ class RecommendedAdapter(val recommendedList:ArrayList<RecommendedRestaurant>):R
         val recommended = recommendedList[position]
 
         with(holder.view){
-            txtIDRecommendedRestaurant.text = recommended.idRecommended
             txtNamaRestaurantRecommended.text = recommended.namaRecommended
             imgViewRecommended.loadImage(recommended.urlRecommended, progressBarRecommendedRestaurant)
         }
