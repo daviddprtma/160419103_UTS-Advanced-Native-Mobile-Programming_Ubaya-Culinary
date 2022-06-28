@@ -30,7 +30,7 @@ class HomeAdapter(val restaurantList: ArrayList<Restaurant>) :RecyclerView.Adapt
         val restoran = restaurantList[position]
 
         with(holder.view){
-            txtIDKuliner.text =restoran.idRestaurant
+//            txtIDKuliner.text =restoran.idRestaurant
             txtNamarestaurant.text = restoran.namaRestaurant
             txtRating.text = restoran.ratingRestaurant
             txtLokasi.text = restoran.lokasiRestaurant
@@ -38,7 +38,7 @@ class HomeAdapter(val restaurantList: ArrayList<Restaurant>) :RecyclerView.Adapt
 
             btnDetailRestaurant.setOnClickListener {
                 val action = restoran.idRestaurant?.let{id->
-                    HomeFragmentDirections.actionHomeFragmentToRestaurantDetailFragment(id)
+                    HomeFragmentDirections.actionHomeFragmentToRestaurantDetailFragment(id.toString())
                 }
                 if(action!=null){
                     Navigation.findNavController(it).navigate(action)
