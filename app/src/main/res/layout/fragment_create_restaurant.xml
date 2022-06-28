@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.createRestaurantFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtReviewBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="26dp"
+            android:text="Review Restaurant"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputNamaResto"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/txtReviewBanner"
+            app:layout_constraintTop_toBottomOf="@+id/textNama">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="masukkan nama restoran" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nama Restoran :"
+            app:layout_constraintStart_toStartOf="@+id/txtReviewBanner"
+            app:layout_constraintTop_toBottomOf="@+id/txtReviewBanner" />
+
+        <TextView
+            android:id="@+id/textRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Rating :"
+            app:layout_constraintStart_toStartOf="@+id/textInputNamaResto"
+            app:layout_constraintTop_toBottomOf="@+id/textInputNamaResto" />
+
+        <TextView
+            android:id="@+id/textLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lokasi Restoran :"
+            app:layout_constraintStart_toStartOf="@+id/textInputRating"
+            app:layout_constraintTop_toBottomOf="@+id/textInputRating" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputRating"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textRating"
+            app:layout_constraintTop_toBottomOf="@+id/textRating">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="masukkan rating anda" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLokasiResto"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textLokasi"
+            app:layout_constraintTop_toBottomOf="@+id/textLokasi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="masukkan lokasi restoran" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Kategori Restoran :"
+            app:layout_constraintStart_toStartOf="@+id/textInputLokasiResto"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLokasiResto" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputKategoriResto"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textKategori"
+            app:layout_constraintTop_toBottomOf="@+id/textKategori">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="massukan kategori restoran" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnKonfirmasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Konfirmasi"
+            app:layout_constraintEnd_toEndOf="@+id/textInputKategoriResto"
+            app:layout_constraintTop_toBottomOf="@+id/textInputKategoriResto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
