@@ -11,6 +11,11 @@
         <action
             android:id="@+id/action_homeFragment_to_restaurantDetailFragment"
             app:destination="@id/restaurantDetailFragment" />
+        <action
+            android:id="@+id/actionCreateRestaurant"
+            app:destination="@id/createRestaurantFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/restaurantDetailFragment"
@@ -69,5 +74,14 @@
         <action
             android:id="@+id/action_itemDrink_to_itemFood"
             app:destination="@id/itemFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRestaurantFragment"
+        android:name="id.davidpratama.a160419103_ubayaculinary.view.createRestaurantFragment"
+        android:label="fragment_create_restaurant"
+        tools:layout="@layout/fragment_create_restaurant" >
+        <action
+            android:id="@+id/action_createRestaurantFragment_to_itemHome"
+            app:destination="@id/itemHome" />
     </fragment>
 </navigation>

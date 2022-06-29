@@ -7,27 +7,18 @@ import com.google.gson.annotations.SerializedName
 
 @Entity
 data class Restaurant(
-//    @SerializedName("id")
-//    @ColumnInfo(name = "id")
-//    val idRestaurant: String?,
-//    @SerializedName("name")
     @ColumnInfo(name = "name")
-    val namaRestaurant: String?,
-//    @SerializedName("rating")
+    var name: String?,
     @ColumnInfo(name = "rating")
-    val ratingRestaurant: String?,
-//    @SerializedName("lokasi")
+    var rating: String?,
     @ColumnInfo(name = "lokasi")
-    val lokasiRestaurant: String?,
-//    @SerializedName("kategori")
+    var lokasi: String?,
     @ColumnInfo(name = "kategori")
-    val kategoriRestaurant: String?,
-//    @SerializedName("url")
+    var kategori: String?,
     @ColumnInfo(name = "url")
-    val urlRestaurant: String?,
-//    @SerializedName("review")
+    var url: String?,
     @ColumnInfo(name = "review")
-    val review : ArrayList<ReviewRestaurant>
+    var review: String?
 ) {
     @PrimaryKey(autoGenerate = true)
     var idRestaurant: Int = 0
@@ -36,9 +27,9 @@ data class Restaurant(
 @Entity
 data class ReviewRestaurant(
     @ColumnInfo(name = "nama")
-    val nama:String?,
+    var nama:String?,
     @ColumnInfo(name = "komentar")
-    val komentar:String?
+    var komentar:String?
 ) {
     @PrimaryKey(autoGenerate = true)
     var idReviewRestaurant: Int = 0
@@ -48,16 +39,16 @@ data class ReviewRestaurant(
 data class Food(
 //    @SerializedName("namaResto")
     @ColumnInfo(name = "namaResto")
-    val namaResto:String?,
+    var namaResto:String?,
 //    @SerializedName("nama")
     @ColumnInfo(name = "namaMakanan")
-    val namaMakanan: String?,
+    var namaMakanan: String?,
 //    @SerializedName("harga")
     @ColumnInfo(name = "harga")
-    val harga: Int?,
+    var harga: Int?,
 //    @SerializedName("url")
     @ColumnInfo(name = "url")
-    val urlFood: String?
+    var urlFood: String?
 ){
     @PrimaryKey(autoGenerate = true)
     var idFood: Int = 0
@@ -67,13 +58,13 @@ data class Food(
 data class Drink(
 //    @SerializedName("namaDrink")
     @ColumnInfo(name = "namaDrink")
-    val namaMinuman: String?,
+    var namaDrink: String?,
 //    @SerializedName("harga")
     @ColumnInfo(name = "harga")
-    val hargaMinuman: Int?,
+    var harga: Int?,
 //    @SerializedName("url")
-    @ColumnInfo(name = "url")
-    val urlMinuman: String?
+    @ColumnInfo(name = "urlMinuman")
+    var urlMinuman: String?
 )
 {
     @PrimaryKey(autoGenerate = true)
@@ -86,16 +77,16 @@ data class RecommendedRestaurant(
 //    @ColumnInfo(name = "id")
 //    val idRecommended: String?,
 //    @SerializedName("name")
-    @ColumnInfo(name = "name")
-    val namaRecommended: String?,
+    @ColumnInfo(name = "namaRecommended")
+    var namaRecommended: String?,
 //    @SerializedName("url")
-    @ColumnInfo(name = "url")
-    val urlRecommended: String?,
-    @ColumnInfo(name = "rating")
-    val ratingResto : String?,
+    @ColumnInfo(name = "urlRecommended")
+    var urlRecommended: String?,
+    @ColumnInfo(name = "ratingResto")
+    var ratingResto : String?,
 ){
     @PrimaryKey(autoGenerate = true)
-    val idRecommended: Int = 0
+    var idRecommended: Int = 0
 }
 
 @Entity
@@ -105,23 +96,23 @@ data class Profile(
 //    val idProfile: String?,
 //    @SerializedName("namaProfile")
     @ColumnInfo(name = "namaProfile")
-    val namaProfile:String?,
+    var namaProfile:String?,
 //    @SerializedName("usernameProfile")
-    @ColumnInfo(name = "namaProfile")
-    val usernameProfile: String?,
+    @ColumnInfo(name = "usernameProfile")
+    var usernameProfile: String?,
 //    @SerializedName("url")
     @ColumnInfo(name = "url")
-    val url: String?
+    var url: String?
 ){
     @PrimaryKey(autoGenerate = true)
-    val idProfile: Int = 0
+    var idProfile: Int = 0
 }
 
 @Entity
 data class About(
 //    @SerializedName("about")
     @ColumnInfo(name = "about")
-    val about: String?
+    var about: String?
 )
 {
     @PrimaryKey(autoGenerate = true)
@@ -131,9 +122,9 @@ data class About(
 @Entity
 data class Support(
     @ColumnInfo(name = "phone")
-    val phone: String?,
+    var phone: String?,
     @ColumnInfo(name = "email")
-    val email: String?
+    var email: String?
 )
 {
     @PrimaryKey(autoGenerate = true)

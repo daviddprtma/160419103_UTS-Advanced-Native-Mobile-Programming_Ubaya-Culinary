@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
         . . .
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <variable
-        name="listener"
-        type="" />
+<!--    <variable-->
+<!--        name="listener"-->
+<!--        type="" />-->
 </layout>
