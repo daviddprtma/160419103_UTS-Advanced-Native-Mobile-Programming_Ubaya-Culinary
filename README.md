@@ -1,11 +1,11 @@
 # 160419103_UTS-Advanced-Native-Mobile-Programming_Ubaya-Culinary
 
-## Project ini merupakan suatu project UTS Advance Native Mobile Programming yang dimana project uts yang dibuat adalah membuat aplikasi Kuliner Ubaya dengan menggunakan kotlin sebagai bahasa pemrograman dalam aplikasi ini dan jsonnya menggunakan live server github di https://daviddprtma.github.io/kulinerubaya/
+## Project ini merupakan suatu project UTS sekaligus UAS Advance Native Mobile Programming yang dimana project uts yang dibuat adalah membuat aplikasi Kuliner Ubaya dengan menggunakan kotlin sebagai bahasa pemrograman dalam aplikasi ini dan jsonnya menggunakan live server github di https://daviddprtma.github.io/kulinerubaya/
 
 ## Akses Json di https://github.com/daviddprtma/kulinerubaya 
-### Nama Pembuat: David Pratama
-### NRP Pembuat: 160419103
-### KP: B
+### Nama Kelompok: 1.) David Pratama - 160419103
+                   2.) Alfredo Gunawan - 160419006
+                   3.) Aldyanto Setiawan - 160419072
 
 <img src="https://cms-assets.tutsplus.com/uploads/users/1499/posts/29820/preview_image/kotlin.jpg" alt="" style="display: block; margin=: auto;">
 
