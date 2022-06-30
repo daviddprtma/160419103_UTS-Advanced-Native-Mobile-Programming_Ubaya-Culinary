@@ -5,7 +5,7 @@
 
     <data>
         <variable
-            name="restaurant"
+            name="LDrestaurant"
             type="id.davidpratama.a160419103_ubayaculinary.model.Restaurant" />
         <variable
             name="listener"

@@ -14,6 +14,9 @@ import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
 class CreateRestaurantViewModel(application:Application):AndroidViewModel(application),CoroutineScope {
+    val restaurantLD = MutableLiveData<List<Restaurant>>()
+    val restaurantLoadErrorLiveData = MutableLiveData<Boolean>()
+    val loadingLiveData = MutableLiveData<Boolean>()
     private val job = Job()
 
     fun addRestaurant(restaurant: List<Restaurant>) {

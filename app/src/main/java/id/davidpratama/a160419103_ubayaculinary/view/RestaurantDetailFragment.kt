@@ -36,16 +36,16 @@ class RestaurantDetailFragment : Fragment() {
     }
 
     private fun observeViewModelDetailRestaurant() {
-        viewModel.detailRestaurant.observe(viewLifecycleOwner, Observer {
-            val detailReviewRestaurant = viewModel.detailRestaurant.value
-            txtIDDetail.text = it.idRestaurant
-            txtNamaDetail.text = it.namaRestaurant
-            txtRatingDetail.text = it.ratingRestaurant
-            txtLokasiDetail.text = it.lokasiRestaurant
-            detailReviewRestaurant?.let {
-                detailReview.updateDetailReviewRestaurant(it.review)
-            }
-            imgPhotoDetailrestaurant.loadImage(it.urlRestaurant, progressBarDetailPhotoRestaurant)
-        })
+        //viewModel.detailRestaurant.observe(viewLifecycleOwner, Observer {
+            //val detailReviewRestaurant = viewModel.detailRestaurant.value
+            //txtIDDetail.text = it.idRestaurant
+            //txtNamaDetail.text = it.namaRestaurant
+            //txtRatingDetail.text = it.ratingRestaurant
+            //txtLokasiDetail.text = it.lokasiRestaurant
+            //detailReviewRestaurant?.let {
+                //detailReview.updateDetailReviewRestaurant(it.review)
+            //}
+            //imgPhotoDetailrestaurant.loadImage(it.urlRestaurant, progressBarDetailPhotoRestaurant)
+        //})
     }
 }
