@@ -3,15 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="LDrestaurant"
-            type="id.davidpratama.a160419103_ubayaculinary.model.Restaurant" />
-        <variable
-            name="listener"
-            type="id.davidpratama.a160419103_ubayaculinary.view.ButtonAddRestaurantClickListener" />
-    </data>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
