@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit
 
 class AboutFragment : Fragment() {
     private lateinit var viewModel: AboutViewModel
-
+    //test
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
