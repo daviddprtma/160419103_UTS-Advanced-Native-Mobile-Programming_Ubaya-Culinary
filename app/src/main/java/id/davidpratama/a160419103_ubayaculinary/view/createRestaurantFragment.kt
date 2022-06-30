@@ -34,11 +34,10 @@ class createRestaurantFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(CreateRestaurantViewModel::class.java)
     }
 
-    fun observeViewModel()
-    {
+    //fun observeViewModel()
+    //{
         //viewModel.restaurantLD.observe(viewLifecycleOwner, Observer {
             //dataBinding.todo = it
         //}
-    }
-
+   //}
 }
