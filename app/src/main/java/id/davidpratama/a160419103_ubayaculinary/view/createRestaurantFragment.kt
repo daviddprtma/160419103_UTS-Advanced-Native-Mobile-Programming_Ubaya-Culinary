@@ -11,7 +11,7 @@ import id.davidpratama.a160419103_ubayaculinary.viewmodel.CreateRestaurantViewMo
 
 class createRestaurantFragment : Fragment() {
     private lateinit var viewModel : CreateRestaurantViewModel
-
+    //test
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
